@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/jason/proj/c_examples/katas/calculate_stats/src/calculate_stats.c
+stdio.h
+-
+calculate_stats.h
+/home/jason/proj/c_examples/katas/calculate_stats/src/calculate_stats.h
+
+/home/jason/proj/c_examples/katas/calculate_stats/src/calculate_stats.h
+

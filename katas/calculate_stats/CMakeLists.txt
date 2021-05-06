@@ -1,4 +1,4 @@
-project(money C)
+project(calculate_stats C)
 
 cmake_minimum_required(VERSION 2.8 FATAL_ERROR)
 set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
@@ -76,5 +76,5 @@ add_subdirectory(tests)
 ###############################################################################
 # Unit tests
 enable_testing()
-add_test(NAME check_money COMMAND check_money)
+add_test(NAME check_calculate_stats COMMAND check_calculate_stats)
 

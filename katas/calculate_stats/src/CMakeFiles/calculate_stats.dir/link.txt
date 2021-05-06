@@ -1,0 +1,2 @@
+/usr/bin/ar qc libcalculate_stats.a  CMakeFiles/calculate_stats.dir/calculate_stats.c.o
+/usr/bin/ranlib libcalculate_stats.a

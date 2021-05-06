@@ -1,0 +1,22 @@
+Start testing: May 05 22:54 CEST
+----------------------------------------------------------
+1/1 Testing: check_calculate_stats
+1/1 Test: check_calculate_stats
+Command: "/home/jason/proj/c_examples/katas/calculate_stats/tests/check_calculate_stats"
+Directory: /home/jason/proj/c_examples/katas/calculate_stats
+"check_calculate_stats" start time: May 05 22:54 CEST
+Output:
+----------------------------------------------------------
+num_elements = 2
+Running suite(s): Calculate_stats
+0%: Checks: 1, Failures: 1, Errors: 0
+/home/jason/proj/c_examples/katas/calculate_stats/tests/check_calculate_stats.c:11:F:Core:test_num_elements:0: Was expecting a value of 6, but found 2
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"check_calculate_stats" end time: May 05 22:54 CEST
+"check_calculate_stats" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: May 05 22:54 CEST

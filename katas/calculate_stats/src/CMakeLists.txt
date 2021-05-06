@@ -1,5 +1,5 @@
 set(LIB_SOURCES
-  money.c
+  calculate_stats.c
 )
 
 set(MAIN_SOURCES
@@ -8,17 +8,17 @@ set(MAIN_SOURCES
 
 set(HEADERS 
   ${CONFIG_HEADER}
-  money.h
+  calculate_stats.h
 )
 
-add_library(money STATIC ${LIB_SOURCES} ${HEADERS})
+add_library(calculate_stats STATIC ${LIB_SOURCES} ${HEADERS})
 
 add_executable(main ${HEADERS} ${MAIN_SOURCES})
-target_link_libraries(main money)
+target_link_libraries(main calculate_stats)
 
-install(TARGETS money
+install(TARGETS calculate_stats
   RUNTIME DESTINATION bin
   LIBRARY DESTINATION lib
   ARCHIVE DESTINATION lib)
 
-install(FILES ${CMAKE_CURRENT_SOURCE_DIR}/money.h DESTINATION include)
+install(FILES ${CMAKE_CURRENT_SOURCE_DIR}/calculate_stats.h DESTINATION include)

@@ -1,0 +1,1 @@
+/usr/bin/cc -g  -rdynamic CMakeFiles/check_calculate_stats.dir/check_calculate_stats.c.o  -o check_calculate_stats  ../src/libcalculate_stats.a -pthread -lcheck_pic -lrt -lm -lsubunit 

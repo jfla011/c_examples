@@ -1,11 +1,15 @@
 #include <stdlib.h>
+#include <stdio.h>
 #include <check.h>
-#include "calculate_stats.h"
+#include "../src/calculate_stats.h"
 
 START_TEST (test_num_elements)
 {
     int numbers[] = {6, 9, 15, -2, 92, 11};
-    ck_assert(6 == 6);
+    printf("num_elements = %i\n",get_num_elements(numbers));
+    printf("num_elements = %i\n",sizeof(numbers)/sizeof(numbers[0]));
+    ck_assert_int_eq(6,6);
+    ck_assert_msg(get_num_elements(numbers) == 6, "Was expecting a value of 6, but found %i", get_num_elements(numbers));
 }
 END_TEST
 
@@ -34,7 +38,7 @@ int main (void)
     s = calculate_stats_suite();
     sr = srunner_create(s);
 
-    srunner_run_all(sr, CK_NORMAL);
+    srunner_run_all(sr, CK_VERBOSE);
     number_failed = srunner_ntests_failed(sr);
     srunner_free(sr);
     return (number_failed == 0) ? EXIT_SUCCESS : EXIT_FAILURE;
