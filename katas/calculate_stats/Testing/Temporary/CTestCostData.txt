@@ -1,3 +1,2 @@
-check_calculate_stats 7 0
+check_calculate_stats 26 0.000108158
 ---
-check_calculate_stats

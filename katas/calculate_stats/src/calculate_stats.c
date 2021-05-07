@@ -1,10 +1,39 @@
 #include <stdio.h>
 #include "calculate_stats.h"
 
-int get_num_elements(int numbers[]) {
-    printf("sizeof(numbers) = %i\n", sizeof(numbers));
-    printf("sizeof(numbers[0]) = %i\n", sizeof(numbers[0]));
-    return sizeof(numbers)/sizeof(numbers[0]);
+int get_num_elements(int numbers[], int length) {
+    return length;
+}
+
+int get_minimum_value(int numbers[], int length){
+    int minimum = numbers[0];
+    for ( int i=0; i<length; i++ ) {
+       if (numbers[i] < minimum) {
+           minimum = numbers[i];
+       } 
+    }
+    return minimum;
+}
+
+int get_maximum_value(int numbers[], int length){
+    int maximum = numbers[0];
+    for ( int i=0; i<length; i++ ) {
+       if (numbers[i] > maximum) {
+           maximum = numbers[i];
+       } 
+    }
+    return maximum;
+}
+
+double get_average(int numbers[], int length) {
+    double total = 0;
+    printf("initial value of total = %g\n", total);
+    for ( int i=0; i<length; i++ ) {
+        total += numbers[i];
+    }
+    printf("method result = %g\n", total/length);
+    printf("static result = %g\n", 1458.9);
+    return total/length;
 }
 
 //int main() {
