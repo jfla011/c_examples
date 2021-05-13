@@ -10,6 +10,9 @@ int main ()
 
     Date dt[5] = { { 2014, 6, 30 }, {2015, 7, 31 }, { 2016, 8, 31 }, {2017, 9, 30 }, { 2018, 10, 31 } };
 
+
+    printf("Size of char = %i\n", sizeof(dt[0].month));
+    printf("Size of short = %i\n", sizeof(dt[0].year));
     printf("Size of Date array = %i\n", sizeof(dt));
     printf("Size of Date element = %i\n", sizeof(dt[0]));
     for ( int i=0; i<(sizeof(dt)/sizeof(dt[0])); i ++ ) {
