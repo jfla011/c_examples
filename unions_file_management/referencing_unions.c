@@ -13,6 +13,6 @@ int main() {
     printf("%g %i\n", ir.floating, ir.integer);
 
     irp->integer = 1234567890;
-    printf("%g %i\n", ir.floating, ir.integer);
+    printf("%g %i\n", irp->floating, irp->integer);
 
 }
